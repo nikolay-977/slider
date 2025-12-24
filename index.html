@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Интерактивный слайдер</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Внешний контейнер -->
+<div class="main-container">
+    <!-- Слайдер -->
+    <div class="slideshow-container">
+        <div class="completedProjects">
+            <h1>Completed projects</h1>
+        </div>
+
+        <div class="gold-line"></div>
+
+        <div class="small-part-text">
+            <a>Only a small part of the work performed by our company is presented on the site.
+                For 14 years on in the construction market we have made happy more than 1000 families</a>
+        </div>
+
+        <div class="city-text">
+            <h2>city:</h2>
+            <a>Rostov-on-Don LCD admiral</a>
+        </div>
+
+        <div class="apartment-area-text">
+            <h2>Apartment area:</h2>
+            <a>81 m2</a>
+        </div>
+
+        <div class="repair-time-text">
+            <h2>Repair time:</h2>
+            <a>4 months</a>
+        </div>
+
+        <div class="repair-cost-text">
+            <h2>Repair Cost:</h2>
+            <a>Upon request</a>
+        </div>
+
+        <!-- Блок для текста над изображениями -->
+        <div class="text-tabs-container">
+            <button class="text-tab tab1 active" onclick="currentSlide(1)">Rostov-on-Don, Admiral</button>
+            <button class="text-tab tab2" onclick="currentSlide(2)">Sochi Thieves</button>
+            <button class="text-tab tab3" onclick="currentSlide(3)">Rostov-on-Don Patriotic</button>
+        </div>
+
+        <!-- Блок для изображений -->
+        <div class="mySlides fade active">
+            <img alt="Rostov-on-Don, Admiral" src="img/slide_1.png">
+        </div>
+
+        <div class="mySlides fade">
+            <img alt="Sochi Thieves" src="img/slide_2.png">
+        </div>
+
+        <div class="mySlides fade">
+            <img alt="Rostov-on-Don Patriotic" src="img/slide_3.png">
+        </div>
+
+        <!-- Блок управления (стрелки + точки) -->
+        <div class="slider-controls">
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <div class="dots-container">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <a class="next" onclick="plusSlides(1)"></a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
